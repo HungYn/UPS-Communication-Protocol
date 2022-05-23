@@ -5,17 +5,17 @@
 #define TXD2 17
 #define RXD2 16
 
-const char* ssid = "TP2-2.4G";
-const char* password = "89726890";
+const char* ssid = "XXXX";
+const char* password = "XXXXX";
 WiFiClient wifiClient;
 
 const char* mqttServer = "broker.emqx.io";  // MQTT伺服器位址 //broker.emqx.io //mqtt3.thingspeak.com
-const char* clientID = "mqttx_97a1555a";      // 用戶端ID，Client ID。
+const char* clientID = "mqttx_sdsasad";      // 用戶端ID，Client ID。
 const char* mqttUserName = "";  // 使用者名稱，Username。
 const char* mqttPwd = "";  //  使用者密碼，Password
 
-const char* topicToSub = "channels/1480381/subscribe/fields/field3"; //訂閱in
-const char* topicToPub = "channels/1480381/publish/fields/field3"; //發佈out
+const char* topicToSub = "channels/2344234/subscribe/fields/field3"; //訂閱in
+const char* topicToPub = "channels/2344234/publish/fields/field3"; //發佈out
 PubSubClient mqttClient(wifiClient);
 
 String comdata3, I_voltage , Fault_voltage, O_voltage, O_load, I_frequency, Battery_voltage, Temperature, Utility_Fail, Battery_Low, Bypass_Active, UPS_Failed, UPS_Type, Test_Progress, Shutdown_Active   ;
